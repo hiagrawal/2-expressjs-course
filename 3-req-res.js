@@ -24,7 +24,8 @@ app.use('/add-product',(req, res, next) => {
     res.send('<form action="/product" method="POST"><input type="text" name="title"></input><button type="submit">Add Product</button></form>');
 });
 
-//when we use 'use', it will work for get as well as post request
+//when we use 'use', it will work for get as well as post request 
+//that is when user directly hit '/product' in browser url, then it will be 'get' request and should not be used for. 
 //but we want to use this only for POST request for that we have various methods
 //get, post, put, delete,, which work exactly as use but with specific types of request
 //so instead of use, we will use post
