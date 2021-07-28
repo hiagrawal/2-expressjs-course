@@ -11,7 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon 5-html-pages/app.js"
+    "start": "nodemon 6-template-engines/app.js"
   },
   "author": "",
   "license": "ISC"
