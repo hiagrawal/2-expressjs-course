@@ -13,7 +13,9 @@ router.get('/', (req, res, next) => {
   //since it is not html file. will not just sendFile but will use render which is a expressjs method to render the pug file
   //and since path is already given in app.js file, that all html/pug files are in views folder, hence just need to give the file name
   //and default pug template engine is also defined in app.js file, hence no need to give pug extension in shop file
-  res.render('shop.pug');
+  const products = adminData.products;
+  res.render('shop' , {prods:products, docTitle:'Shop'});
+  //simply can pass values in object as key value pair to get the same in html file
 });
 
 module.exports = router;

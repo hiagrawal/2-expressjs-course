@@ -7,3 +7,5 @@ to install template engines : ejs, pug, handlebars
 npm install --save ejs pug express-handlebars
 //express-handlebars have integration with express
 //ejs and pug is already included in express core modules
+
+pub official doc: https://pugjs.org/api/getting-started.html
