@@ -1,0 +1,23 @@
+//- html5 +enter: it will automatically generate pug file
+//- few rules: 
+//- it reads file as per indentation: if indent then taken as child, if not then sibling 
+//- give all attributes in bracket() and value after space 
+//- at any point, type element tag like 'a' for anchor and hit enter, it will generate the pug format 
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title My Shop
+        link(rel="stylesheet", href="/css/main.css")
+        link(rel="stylesheet", href="/css/product.css")
+    body 
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                        a.active(href="/") Shop
+                    li.main-header__item
+                        a.active(href="/admin/add-product") Add Product

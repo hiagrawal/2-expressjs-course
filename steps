@@ -4,6 +4,7 @@ npm install (will install node modules)
 npm install nodemon (will install nodemon to have a watch at changed files)
 npm install express (to install 3rd party framework express js)
 npm install body-parser (to parse the request body that we used in req-res section)
+npm install --save ejs pug express-handlebars (to install template engines)
 
 expressjs is all about middleware 
 middleware means incoming requests is automatically funnelled through a bunch a functions by express js

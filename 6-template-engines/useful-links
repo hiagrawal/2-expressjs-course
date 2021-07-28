@@ -1,0 +1,9 @@
+
+
+template engines are used to render dynamic content in html file (like we had string interpolation {{}} in angular)
+we can have n number of template engines. Here we are learning 3 template engines: ejs, pug and handlebars
+to install template engines : ejs, pug, handlebars
+
+npm install --save ejs pug express-handlebars
+//express-handlebars have integration with express
+//ejs and pug is already included in express core modules
