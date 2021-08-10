@@ -14,7 +14,7 @@ router.get('/', (req, res, next) => {
   //and since path is already given in app.js file, that all html/pug files are in views folder, hence just need to give the file name
   //and default pug template engine is also defined in app.js file, hence no need to give pug extension in shop file
   const products = adminData.products;
-  res.render('shop' , {prods:products, pageTitle:'My Shop', path:'shop',hasProducts: products.length>0});
+  res.render('shop' , {prods:products, pageTitle:'My Shop', path:'shop',hasProducts: products.length>0, activeShop:true, productsCSS: true});
   //simply can pass values in object as key value pair to get the same in html file
 });
 

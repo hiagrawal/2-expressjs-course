@@ -29,7 +29,8 @@ const app = express();
 //app.set('view engine','handlebars');
 
 
-app.engine('hbs',expressHbs());
+app.engine('hbs',expressHbs({layoutsDir:'6-template-engines/handlebars/views/layouts/', defaultLayout:'main-layout', extname:'hbs'}));
+//to give main/common layout, will have to give in engine the layout directory
 app.set('view engine','hbs');
 app.set('views',path.join(__dirname, 'views'));
 
