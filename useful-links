@@ -1,3 +1,6 @@
 Express.js Official Docs: https://expressjs.com/en/starter/installing.html
 
 pub official doc: https://pugjs.org/api/getting-started.html
+
+Due to a (temporary) breaking change introduced by the library authors (of the package we'll install), 
+make sure you run npm install --save express-handlebars@3.0 before you start using that package in the next lecture.
