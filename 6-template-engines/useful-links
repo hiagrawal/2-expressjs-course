@@ -13,3 +13,10 @@ pub official doc: https://pugjs.org/api/getting-started.html
 Due to a (temporary) breaking change introduced by the library authors (of the package we'll install in the next lecture), 
 make sure you run npm install --save express-handlebars@3.0 before you start using that package in the next lecture.
 
+Useful resources:
+
+Pug Docs: https://pugjs.org/api/getting-started.html
+
+Handlebars Docs: https://handlebarsjs.com/
+
+EJS Docs: http://ejs.co/#docs
