@@ -14,6 +14,16 @@ exports.addProduct = (req, res, next) => {
   }
 
 exports.showProducts = (req, res, next) => {
-    const products = Product.fetchAll();
-    res.render('shop' , {prods:products, pageTitle:'My Shop', path:'shop',hasProducts: products.length>0, activeShop:true, productsCSS: true});  
-  }
+    // const products = Product.fetchAll();
+    // res.render('shop' , {prods:products, pageTitle:'My Shop', path:'shop',hasProducts: products.length>0, activeShop:true, productsCSS: true});  
+    Product.fetchAll((products) => {
+      res.render('shop' , {
+        prods:products, 
+        pageTitle:'My Shop', 
+        path:'shop',
+        hasProducts: products.length>0, 
+        activeShop:true, 
+        productsCSS: true
+      })
+    });
+}
